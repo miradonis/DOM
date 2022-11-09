@@ -1,0 +1,75 @@
+@font-face {
+    font-family: RubikBubbles;
+    src: url("../font/RubikBubbles-Regular.ttf");
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+button {
+    background-color: #035aa6;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+button:nth-of-type(1) {
+    margin-left: 20%;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+div {
+    border-radius: 5px;
+}
+
+.small {
+    width: 270px;
+    border: 5px solid #515151;
+    border-radius: 10px;
+    text-align: center;
+    color: #639c62;
+}
+
+.middle {
+    width: 500px;
+    border: 15px solid #515151;
+    border-radius: 10px;
+    text-align: center;
+    color: #639c62;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.bigAndCrazy {
+    width: 950px;
+    text-align: center;
+    font-family: RubikBubbles;
+    font-size: 3.5rem;
+    border: 5px solid #639c62;
+
+    animation-name: greenToYellow;
+}
+
+@keyframes greenToYellow {
+
+    0%,
+    100% {
+        color: #639c62;
+    }
+
+    50% {
+        color: yellow;
+    }
+}
